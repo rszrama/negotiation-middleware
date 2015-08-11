@@ -77,7 +77,7 @@ actual matched media type from the request header. Refer to the class documentat
 
 ## Middleware Signature
 
-Negotiation Middleware uses the middleware signature required by [Slim 3.x](http://www.slimframework.com/docs/concepts/middleware.html),
+NegotiationMiddleware uses the middleware signature required by [Slim 3.x](http://www.slimframework.com/docs/concepts/middleware.html),
 that of a callable that accepts three arguments: a PSR-7 request object, a PSR-7 response object, and a callable that
 represents the next middleware in the stack.
 
