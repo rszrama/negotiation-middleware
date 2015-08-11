@@ -51,7 +51,6 @@ instance of this interface to store the negotiated media type in the request obj
 Thus, the route closure could print the negotiated media type like so:
 
 ```php
-
 $app
     ->get('/hello', function(Slim\Http\Request $request, Slim\Http\Response $response, $args) {
         $mediaType = $request->getAttribute('mediaType')->getValue();
