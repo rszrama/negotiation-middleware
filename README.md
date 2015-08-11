@@ -3,7 +3,7 @@
 NegotiationMiddleware provides content negotiation middleware for PHP applications using a middleware signature that
 requires a request object, a response object, and the next callable in the middleware stack.
 
-This library depends on willdurand/negotation for content negotiation. It allows you to add negotiation to a middleware
+This library depends on [willdurand/negotation](https://github.com/willdurand/Negotiation) for content negotiation. It allows you to add negotiation to a middleware
 stack that:
 
 1. Identifies and matches against a list of acceptable media types.
@@ -106,4 +106,4 @@ request and response objects.
 
 ## License
 
-Negotiation Middleware is licensed under the MIT license. See [LICENSE.md](LICENSE.md) for more information.
+NegotiationMiddleware is licensed under the MIT license. See [LICENSE.md](LICENSE.md) for more information.
