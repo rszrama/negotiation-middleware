@@ -1,6 +1,6 @@
-# Negotiation Middleware
+# NegotiationMiddleware
 
-Negotiation Middleware provides content negotiation middleware for PHP applications using a middleware signature that
+NegotiationMiddleware provides content negotiation middleware for PHP applications using a middleware signature that
 requires a request object, a response object, and the next callable in the middleware stack.
 
 This library depends on willdurand/negotation for content negotiation. It allows you to add negotiation to a middleware
@@ -15,13 +15,20 @@ If the negotiator cannot determine which media type to use in response to the re
 
 ## Installation
 
-(Notes for installing via composer to come.)
+Use [Composer](https://getcomposer.org/) to install NegotiationMiddleware:
+
+```bash
+$ composer require rszrama/negotiation-middleware
+```
+
+This will install the library and its dependencies. NegotiationMiddleware requires PHP 5.4.0 or newer.
 
 ## Usage
 
-Add an instance of NegotiationMiddleware to an application or route level middleware stack, passing two arguments to the
-constructor: an array of acceptable media types to be matched against and a boolean indicating whether or not the
-middleware should simply match the first acceptable media type in the absence of an Accept header in the request.
+Add an instance of NegotiationMiddleware\Negotiator to an application or route level middleware stack, passing two
+arguments to the constructor: an array of acceptable media types to be matched against and a boolean indicating
+whether or not the middleware should simply match the first acceptable media type in the absence of an Accept header
+in the request.
 
 Example from Slim 3.x:
 
