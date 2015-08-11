@@ -15,7 +15,7 @@
     "require": {
         "php": ">=5.4.0",
         "psr/http-message": "1.0",
-        "willdurand/negotiation": "dev-master"
+        "willdurand/negotiation": "2.0.0-alpha1"
     },
     "autoload": {
         "psr-4": {
