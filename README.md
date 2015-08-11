@@ -35,6 +35,8 @@ Example from Slim 3.x:
 ```php
 <?php
 
+require 'vendor/autoload.php';
+
 use \NegotiationMiddleware\Negotiator;
 
 $app = new \Slim\App();
@@ -44,6 +46,8 @@ $app
         return $response->write('Hello, world!');
     })
     ->add(new Negotiator(['text/html', 'application/json'], TRUE));
+
+$app->run();
 
 ```
 
