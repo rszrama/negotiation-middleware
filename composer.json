@@ -1,0 +1,25 @@
+{
+    "name": "rszrama/negotiation-middleware",
+    "type": "library",
+    "description": "Content negotiation middleware for PHP applications using a request, response, and next callable signature.",
+    "keywords": ["negotiation", "middleware", "slim"],
+    "homepage": "https://github.com/rszrama/negotiation-middleware",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Szrama",
+            "email": "ryan.szrama@gmail.com",
+            "homepage": "http://ryanszrama.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "psr/http-message": "1.0",
+        "willdurand/negotiation": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "NegotiationMiddleware\\": "src/"
+        }
+    }
+}
