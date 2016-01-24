@@ -106,4 +106,4 @@ request and response objects.
 
 ## License
 
-NegotiationMiddleware is licensed under the MIT license. See [LICENSE.md](LICENSE.md) for more information.
+NegotiationMiddleware is licensed under the MIT license. See [LICENSE](LICENSE) for more information.
